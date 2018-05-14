@@ -1,5 +1,5 @@
 # 遇到的问题与笔记
-* 目前认为是要安装固定格式来
+## 目前认为是要安装固定格式来
 > 官网说明:中文为来自英语三级的G主翻译
 
 <b>*name*</b>: identifies the Spider. It must be unique within a project, that is, you can’t set the same name for different Spiders.
@@ -17,7 +17,7 @@
 
 
 
-* scrapy shell
+## scrapy shell
  > scrapy的命令
  
  <code>scrapy shell "www.taobao.com"</code> 这个命令会抓取剁手网站，在命令行里可以对返回结果进行处理，比如紧接着<code>response.css('title'')</code>,作为一个猥琐程序员，你应该知道这句命令的大概意思了吧！！
