@@ -31,4 +31,80 @@
 >               'author':quote.css('small.author::text').extract_first(),
 >               'tags':quote.css('div.tags a.tag::text').extract(),
 >           }
- parse方法改为上述,spider文件夹下命令行运行<code>scrapy crawl  quotes -o quotes.json</code>会把解析出来的内容保存到文件中    
+ parse方法改为上述,spider文件夹下命令行运行<code>scrapy crawl  quotes -o quotes.json</code>会把解析出来的内容保存到文件中 
+ 
+## Command line tools(命令行工具)
+###命令工具文档简要说明
+
+> scrapy -h
+
+> Usage:
+
+> scrapy <command> [options] [args]
+
+> Available commands:
+
+>  bench         Run quick benchmark test
+
+>  fetch         Fetch a URL using the Scrapy downloader
+
+>  genspider     Generate new spider using pre-defined templates
+
+>  runspider     Run a self-contained spider (without creating a project)
+
+>  settings      Get settings values
+
+>  shell         Interactive scraping console
+
+>  startproject  Create new project
+
+>  version       Print Scrapy version
+
+>  view          Open URL in browser, as seen by Scrapy
+
+>  [ more ]      More commands available when run from project directory
+
+command line主要分为global类型跟project-only类型，global命令不依赖项目，project-only必须在scrapy的项目下才能运行
+
+####常见的global command:
+
+* startproject  
+ >scrapy startproject <project_name> [project_dir]
+* genspider
+> scrapy genspider [-t template] <name> <domain>
+> (我就不翻译，怎么滴，谁叫我英文cow B)Create a new spider in the current folder or in the current project’s spiders folder, if called from inside a project. The <name> parameter is set as the spider’s name, while <domain> is used to generate the allowed_domains and start_urls spider’s attributes.
+ Usage example:
+>$ scrapy genspider -l <br> 
+>Available templates:<br> 
+>  basic<br> 
+>  crawl<br> 
+>  csvfeed<br> 
+>  xmlfeed<br> 
+>$ scrapy genspider example example.com<br> 
+>Created spider 'example' using template 'basic'<br> 
+
+$ scrapy genspider -t crawl scrapyorg scrapy.org
+Created spider 'scrapyorg' using template 'crawl'
+</p>
+* setting
+> 
+* runspider
+
+* shell
+
+* fetch
+
+* view
+
+* version
+ 
+常见的project-only command：
+
+* crawl
+* check
+* list
+* edit
+* parse
+* bench
+ ## 数据解析
+ > 前面大概学习了下数据抓取已经几个常用的command  tools（很多没写，需要就看文档咯）。安装Beautiful   
