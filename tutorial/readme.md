@@ -66,7 +66,7 @@
 
 command line主要分为global类型跟project-only类型，global命令不依赖项目，project-only必须在scrapy的项目下才能运行
 
-####常见的global command:
+#### 常见的global command:
 
 * startproject  
  >scrapy startproject <project_name> [project_dir]
