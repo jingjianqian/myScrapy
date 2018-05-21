@@ -44,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/tutorial/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="756">
-                <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+              <first_editor relative-caret-position="189">
+                <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -273,7 +273,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526309441621</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="一些简单的scrapy command  line介绍">
+      <created>1526915917048</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1526915917048</updated>
+    </task>
+    <task id="LOCAL-00011" summary="一些简单的scrapy command  line介绍">
+      <created>1526915999239</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526915999239</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -287,7 +301,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.0" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11927083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13645834" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -316,7 +330,8 @@
     <MESSAGE value="创建了两个spider，但是都有问题，暂时不知道什么原因，明天再看了，累了，要去泡妹才有精神" />
     <MESSAGE value="修改了spider不抓取数据的问题，同时简单学会了解析抓取的数据，&gt;shit,一天就这么点进度，八嘎！" />
     <MESSAGE value="修改下readme.md样式，更加biu提fool" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改下readme.md样式，更加biu提fool" />
+    <MESSAGE value="一些简单的scrapy command  line介绍" />
+    <option name="LAST_COMMIT_MESSAGE" value="一些简单的scrapy command  line介绍" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/readme.md">
@@ -504,8 +519,8 @@
     <entry file="file://$PROJECT_DIR$/tutorial/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="756">
-            <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
+          <first_editor relative-caret-position="189">
+            <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
