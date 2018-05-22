@@ -59,8 +59,9 @@
  >scrapy startproject <project_name> [project_dir]
 * genspider
 > scrapy genspider [-t template] <name> <domain>
-> (我就不翻译，怎么滴，谁叫我英文cow B)Create a new spider in the current folder or in the current project’s spiders folder, if called from inside a project. The <name> parameter is set as the spider’s name, while <domain> is used to generate the allowed_domains and start_urls spider’s attributes.
- Usage example:
+> (我就不翻译，怎么滴，谁叫我英文cow B)Create a new spider in the current folder or in the current project’s spiders folder, if called from inside a project. The <name> parameter is set as the spider’s name, while <domain> is used to generate the allowed_domains and start_urls spider’s attributes.<br> 
+
+> Usage example:
 >$ scrapy genspider -l <br> 
 >Available templates:<br> 
 >  basic<br> 
