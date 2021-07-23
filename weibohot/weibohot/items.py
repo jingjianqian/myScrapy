@@ -7,6 +7,14 @@ import scrapy
 
 
 class WeibohotItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
+    # 热搜排名
+    index = scrapy.Field()
+    # 热搜关键字
+    title = scrapy.Field()
+    # 热搜点击数
+    hit = scrapy.Field()
+    # 热搜 新 热 沸 爆
+    type = scrapy.Field()
+    # 热搜连接
+    hot_href = scrapy.Field()
     pass

@@ -10,4 +10,5 @@ from itemadapter import ItemAdapter
 
 class WeibohotPipeline:
     def process_item(self, item, spider):
+        # item.hit = 100
         return item
