@@ -24,8 +24,9 @@ class MysqlUtil:
     def insertHotRecord(self, item):
         self.init_mysql()
         cursor = self.conn.cursor()
-        insert_sql = 'insert hot_record_dev(temp_index,title,hit,type,date,href) values (%s, %s, %s, %s, now(),%s)'
-        cursor.execute(insert_sql, (item.get('index'), item.get('title'), item.get('hit'), item.get('type'), item.get('hot_href')))
+        insert_sql = 'insert hot_record_dev(temp_index,title,hit,type,date,href,hot_details) values (%s, %s, %s, %s, ' \
+                     'now(),%s,%s) '
+        cursor.execute(insert_sql, (item.get('index'), item.get('title'), item.get('hit'), item.get('type'), item.get('hot_href'), item.get('hot_details')))
         self.conn.commit()
         self.conn.close()
 

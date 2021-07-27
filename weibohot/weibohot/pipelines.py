@@ -17,5 +17,6 @@ class WeibohotMysqlPipeline:
         self.mysqlUtil = MysqlUtil()
 
     def process_item(self, item, spider):
+        print(item)
         self.mysqlUtil.insertHotRecord(item)
         return item

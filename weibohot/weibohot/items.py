@@ -17,4 +17,6 @@ class WeibohotItem(scrapy.Item):
     type = scrapy.Field()
     # 热搜连接
     hot_href = scrapy.Field()
+    # 热搜明细
+    hot_details = scrapy.Field()
     pass
