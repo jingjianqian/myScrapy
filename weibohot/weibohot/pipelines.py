@@ -7,8 +7,15 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
+from weibohot.utils.mysql import MysqlUtil
 
-class WeibohotPipeline:
+
+class WeibohotMysqlPipeline:
+
+    # 连接数据库
+    def __init__(self):
+        self.mysqlUtil = MysqlUtil()
+
     def process_item(self, item, spider):
-        # item.hit = 100
+        self.mysqlUtil.insertHotRecord(item)
         return item
