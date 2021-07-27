@@ -26,8 +26,10 @@ class Weibohosprider01Spider(scrapy.Spider):
                 hot_href = self.item['hot_href'] = self.base_url + tr.xpath('./td[position()=2]/a/@href_to').extract_first()
             else:
                 hot_href = self.item['hot_href'] = self.base_url + tr.xpath('./td[position()=2]/a/@href').extract_first()
-            print(111111, hot_href)
-        yield from response.follow_all(hot_href, self.parse_detail, dont_filter=True)
+
+            yield scrapy.Request(url=hot_href, callback=self.parse_detail, meta={'item': self.item})
+            # print(111111, hot_href)
+            # yield from response.follow_all(hot_href, self.parse_detail, dont_filter=True)
             # yield {
             #     'index': self.item['index'],
             #     'title': self.item['title'],
@@ -38,16 +40,18 @@ class Weibohosprider01Spider(scrapy.Spider):
             # }
 
     def parse_detail(self, response):
+        self.item['hot_details'] = response.xpath('//html').extract()
+        yield self.item
         # print(response.header)
-        print()
-        yield {
-            'index': self.item['index'],
-            'title': self.item['title'],
-            'hit': self.item['hit'],
-            'type': self.item['type'],
-            'hot_href': self.item['hot_href'],
-            'hot_details': response.xpath('//div[@class=m-con-l]')
-        }
+        # print()
+        # yield {
+        #     'index': self.item['index'],
+        #     'title': self.item['title'],
+        #     'hit': self.item['hit'],
+        #     'type': self.item['type'],
+        #     'hot_href': self.item['hot_href'],
+        #     'hot_details': response.xpath('//div[@class=m-con-l]')
+        # }
 
     def getWeiBoHotDatas(self):
         yield scrapy.Request(url=self.start_urls, callback=self.parse, meta={'item': self.item})
