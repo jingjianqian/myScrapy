@@ -10,8 +10,8 @@ from itemadapter import ItemAdapter
 from weibohot.utils.mysql import MysqlUtil
 
 
+# 微博热搜piperLine
 class WeibohotMysqlPipeline:
-
     # 连接数据库
     def __init__(self):
         self.mysqlUtil = MysqlUtil()
@@ -20,3 +20,10 @@ class WeibohotMysqlPipeline:
         print(item)
         self.mysqlUtil.insertHotRecord(item)
         return item
+
+
+# 明星资料pileLine
+class StartColletorPipeelIne:
+
+    def process_item(self, item, sprider):
+        pass
