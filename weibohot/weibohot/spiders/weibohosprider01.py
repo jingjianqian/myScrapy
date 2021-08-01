@@ -29,6 +29,7 @@ class Weibohosprider01Spider(scrapy.Spider):
             yield scrapy.Request(url=hot_href, callback=self.parse_detail, meta={'item': item})
 
     def parse_detail(self, response):
+        self.base_url
         item = response.meta['item']
         item['hot_details'] = response.xpath('//html').extract()
         yield item
