@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6ab918-a198-43a5-91ae-23bef6482478" name="Default" comment="完成微博热搜基本的抓取">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myScrapy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myScrapy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +56,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -123,13 +134,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/weibohot" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/data/code/back/python/python",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\room\github\myScrapy\spiderDemo\spiderDemo" />
@@ -138,7 +162,7 @@
       <recent name="E:\room\github\myScrapy\spiderDemo\spiderDemo\spiders" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.configparser">
+  <component name="RunManager" selected="Python.workingHours">
     <configuration name="configparser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myScrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,28 +229,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="taobao" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="myScrapy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/taobao/taobao/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/taobao/taobao/spiders/taobao.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="weibohosprider01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="myScrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -249,13 +251,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="workingHours" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="myScrapy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/workDaily/workDaily/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.workingHours" />
         <item itemvalue="Python.configparser" />
         <item itemvalue="Python.weibohosprider01" />
         <item itemvalue="Python.middlewares" />
         <item itemvalue="Python.spider" />
-        <item itemvalue="Python.taobao" />
       </list>
     </recent_temporary>
   </component>
@@ -277,6 +301,13 @@
       <workItem from="1627008936314" duration="3440000" />
       <workItem from="1627012459476" duration="1096000" />
       <workItem from="1627368568621" duration="18751000" />
+      <workItem from="1676293415378" duration="19000" />
+      <workItem from="1676349945242" duration="649000" />
+      <workItem from="1677061148831" duration="1163000" />
+      <workItem from="1677071207369" duration="1622000" />
+      <workItem from="1677127541557" duration="2911000" />
+      <workItem from="1677158730544" duration="1513000" />
+      <workItem from="1677220250708" duration="9273000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1526208122611</created>
@@ -433,7 +464,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -451,10 +481,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="完成微博热搜基本的抓取" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myScrapy$workingHours.coverage" NAME="workingHours Coverage Results" MODIFIED="1677159461303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workDaily/workDaily/spiders" />
     <SUITE FILE_PATH="coverage/myScrapy$configparser.coverage" NAME="configparser Coverage Results" MODIFIED="1627387245095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibohot/weibohot/utils" />
+    <SUITE FILE_PATH="coverage/myScrapy$weibohosprider01.coverage" NAME="weibohosprider01 Coverage Results" MODIFIED="1627369316140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibohot/weibohot/spiders" />
     <SUITE FILE_PATH="coverage/myScrapy$middlewares.coverage" NAME="middlewares Coverage Results" MODIFIED="1626406648143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorial/tutorial" />
     <SUITE FILE_PATH="coverage/myScrapy$spider.coverage" NAME="spider Coverage Results" MODIFIED="1626406641932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spiderDemo/spiderDemo" />
-    <SUITE FILE_PATH="coverage/myScrapy$weibohosprider01.coverage" NAME="weibohosprider01 Coverage Results" MODIFIED="1627369316140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibohot/weibohot/spiders" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/readme.md">

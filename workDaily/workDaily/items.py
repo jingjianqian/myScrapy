@@ -10,3 +10,8 @@ class WorkdailyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+
+class Captcha_codeItem(scrapy.Item):
+    image_url = scrapy.Field()
+    image_name = scrapy.Field()
