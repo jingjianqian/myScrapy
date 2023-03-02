@@ -15,6 +15,7 @@ NEWSPIDER_MODULE = "workDaily.spiders"
 
 HTTPERROR_ALLOWED_CODES = [301]
 
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "workDaily (+http://www.yourdomain.com)"
 
@@ -33,7 +34,7 @@ allow_redirects = True
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
 # 设置图片存储目录
-IMAGES_STORE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'images')
+IMAGES_STORE = "./images" # os.path.join(os.path.dirname(os.path.dirname(__file__)), 'images')
 
 
 # Disable cookies (enabled by default)
@@ -69,7 +70,8 @@ IMAGES_STORE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'images'
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   "workDaily.pipelines.ImagesrenamePipeline": 300,
+   # "workDaily.pipelines.WorkdailyPipeline": 300,
+   "workDaily.pipelines.ImagePipeline": 299
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

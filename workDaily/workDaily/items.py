@@ -4,7 +4,6 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-from scrapy.pipelines.images import ImagesPipeline
 
 
 class WorkdailyItem(scrapy.Item):
@@ -12,9 +11,8 @@ class WorkdailyItem(scrapy.Item):
     # name = scrapy.Field()
     image_url = scrapy.Field()
     image_name = scrapy.Field()
-    pass
 
 
-class CaptchaCodeItem(ImagesPipeline):
-    image_url = scrapy.Field()
-    image_name = scrapy.Field()
+# class CaptchaCodeItem(ImagesPipeline):
+#     image_url = scrapy.Field()
+#     image_name = scrapy.Field()
