@@ -2,7 +2,7 @@ import re
 
 import scrapy
 
-from workDaily.items import CaptchaCodeItem
+from workDaily.items import WorkdailyItem
 
 
 class WorkinghoursSpider(scrapy.Spider):
@@ -30,8 +30,8 @@ class WorkinghoursSpider(scrapy.Spider):
             'Connection': 'keep-alive',
             'Cookie': 'JSESSIONID=A9B66A4196A9738F6C394580D2C70A6E'
         }
-
         if len(main_page_list) > 0:
+            print("parse 开始用cookie登录")
             yield scrapy.Request(
                 self.start_urls[1],
                 cookies=self.cookies,
@@ -40,7 +40,11 @@ class WorkinghoursSpider(scrapy.Spider):
                 callback=self.parse_login
             )
         else:
-            print("cookie失效！！")
+            print("parse cookie失效！！")
+            item = WorkdailyItem()
+            item['image_url'] = self.captcha_code_url[0]
+            item['image_name'] = "Captcha_codeItem.png"
+            return item
             # yield scrapy.Request(
             #     self.captcha_code_url[0],
             #     dont_filter=True,
@@ -54,7 +58,11 @@ class WorkinghoursSpider(scrapy.Spider):
     # 解析登录页面,得到验证码链接
     def parse_login(self, response):
         # item = Captcha_codeItem
-        print("ahahha")
+        print("parse_login")
+        item = WorkdailyItem()
+        item['image_url'] = self.captcha_code_url[0]
+        item['image_name'] = "Captcha_codeItem.png"
+        yield item
         # print(response.body)
         # url = response.url  #.xpath('/html/body/img/@src').extract()
         # yield scrapy.Request(
@@ -71,6 +79,4 @@ class WorkinghoursSpider(scrapy.Spider):
 
     def loginWithCount(self, response):
         print("1313123123")
-
-        print(response.body)
         pass
