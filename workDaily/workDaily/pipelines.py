@@ -2,10 +2,13 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+import os.path
 import re
 
 import scrapy
+from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
+from scrapy.utils.project import get_project_settings
 
 
 # useful for handling different item types with a single interface
@@ -19,21 +22,34 @@ class WorkdailyPipeline:
 
 
 class ImagePipeline(ImagesPipeline):
+    image_name = 'catpath.png'
 
     def get_media_requests(self, item, info):
-        print("get_media_requests")
+        print(item['image_name'])
+        self.image_name = 'image_name'
         return scrapy.Request(item['image_url'])
 
-    # def file_path(self, request, response=None, info=None, *, item=None):
-    #     print("file_path")
+    def file_path(self, request, response=None, info=None, *, item=None):
+        base_path = os.path.join(get_project_settings().get('IMAGES_STORE'), 'catpath.png')
+        print(os.path.exists(base_path))
+        if os.path.exists(base_path):
+            print("666666666666666666666")
+            os.remove(base_path)
+        else:
+            print("777777777777")
+        return 'catpath.png'
 
     # def process_item(self, item, spider):
     #     print("process_item")
     #     print(item)
 
     def item_completed(self, results, item, info):
-        print("item_completed")
-
+        for x in results:
+            print(x)
+        image_paths = [x['path'] for ok, x in results if ok]
+        if not image_paths:
+            raise DropItem("Item contains no images")
+        return item
 
 #
 # class ImagesrenamePipeline(ImagesPipeline):

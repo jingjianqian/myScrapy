@@ -4,9 +4,21 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from fake_useragent import UserAgent
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
+
+
+class MyUserAgentMiddleware(UserAgentMiddleware):
+    def __init__(self, user_agent=''):
+        super().__init__(user_agent)
+        self.user_agent = user_agent
+
+    def process_request(self, request, spider):
+        ua = UserAgent()
+        request.headers['User-Agent'] = ua.random
 
 
 class WorkdailySpiderMiddleware:
@@ -101,3 +113,5 @@ class WorkdailyDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
+
+

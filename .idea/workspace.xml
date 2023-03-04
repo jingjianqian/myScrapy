@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6ab918-a198-43a5-91ae-23bef6482478" name="Default" comment="完成微博热搜基本的抓取">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/images/catpath.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/myScrapy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myScrapy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/middlewares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workDaily/workDaily/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/spiders/images/full/0e0f9e25515e82ffe8b1eb36451ecf61fb32b61b.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +37,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/workDailyvenv/Lib/site-packages/scrapy/__init__.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -134,26 +139,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/data/code/back/python/python",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/data/code/back/python/python&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\room\github\myScrapy\spiderDemo\spiderDemo" />
@@ -308,6 +313,11 @@
       <workItem from="1677127541557" duration="2911000" />
       <workItem from="1677158730544" duration="1513000" />
       <workItem from="1677220250708" duration="9273000" />
+      <workItem from="1677295957556" duration="6048000" />
+      <workItem from="1677412681692" duration="633000" />
+      <workItem from="1677674210444" duration="4025000" />
+      <workItem from="1677731088387" duration="5489000" />
+      <workItem from="1677927135835" duration="3973000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1526208122611</created>
