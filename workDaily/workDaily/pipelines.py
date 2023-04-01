@@ -33,10 +33,10 @@ class ImagePipeline(ImagesPipeline):
         base_path = os.path.join(get_project_settings().get('IMAGES_STORE'), 'catpath.png')
         print(os.path.exists(base_path))
         if os.path.exists(base_path):
-            print("666666666666666666666")
+            print("验证码文件存在")
             os.remove(base_path)
         else:
-            print("777777777777")
+            print("验证码文件不存在")
         return 'catpath.png'
 
     # def process_item(self, item, spider):
