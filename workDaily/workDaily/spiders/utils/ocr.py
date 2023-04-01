@@ -12,7 +12,6 @@ class MyOcr:
         try:
             with open(self.image_path, 'rb') as f:
                 self.image = f.read()
-                print(self.image)
                 return self.ocr.classification(self.image)
         except IOError:
             print("没有找到文件")
@@ -21,6 +20,5 @@ class MyOcr:
 
 if __name__ == '__main__':
     my_ocr = MyOcr('../images/catpath.png')
-    print(my_ocr.image_path)
     result = my_ocr.OcrOneImage()
     print(result)

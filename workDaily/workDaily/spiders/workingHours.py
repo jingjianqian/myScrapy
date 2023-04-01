@@ -21,8 +21,6 @@ class WorkinghoursSpider(scrapy.Spider):
 
     def parse(self, response, *args, **kwargs):
         main_page_list = re.findall(r'href = "(.*?)"', response.text)
-        cookies = "JSESSIONID=4B217DA6BFEA1AF0D294B966541CEF9F; cas-login=\"CASTGC=TGT-34738-Bg3NGqnXmEafZEvoWvC4A7x5gTAMCtgc2Plg4vdtPapbBhbQlw\"; jingjq=%2Fdefault%2Fame%2Flogin%2Fimage%2Fyuanbao1.jpg"
-
         headers = {
             'User-Agent': 'Apifox/1.0.0 (https://www.apifox.cn)',
             'Accept': '*/*',
@@ -36,7 +34,7 @@ class WorkinghoursSpider(scrapy.Spider):
                 cookies=self.cookies,
                 dont_filter=True,
                 headers=headers,
-                callback=self.parse_login
+                callback=self.getCaptChaCode
             )
         # else:
         #     item = WorkdailyItem()
@@ -45,7 +43,7 @@ class WorkinghoursSpider(scrapy.Spider):
         #     return item
 
     # 解析登录页面,得到验证码链接
-    def parse_login(self, response):
+    def getCaptChaCode(self, response):
         # item = Captcha_codeItem
         item = WorkdailyItem()
         item['image_url'] = self.captcha_code_url[0]
