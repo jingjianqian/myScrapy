@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6ab918-a198-43a5-91ae-23bef6482478" name="Default" comment="完成微博热搜基本的抓取">
-      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/utils/ocr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/pipelines/loginPipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package.json" />
         <option value="Python Script" />
       </list>
     </option>
@@ -25,11 +28,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -147,26 +150,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/data/code/back/python/python",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/data/code/back/python/python&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\room\github\myScrapy\spiderDemo\spiderDemo" />
@@ -327,7 +330,8 @@
       <workItem from="1677731088387" duration="5489000" />
       <workItem from="1677927135835" duration="4135000" />
       <workItem from="1678713705723" duration="13000" />
-      <workItem from="1680353898134" duration="2588000" />
+      <workItem from="1680353898134" duration="5902000" />
+      <workItem from="1680409057448" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1526208122611</created>
@@ -502,7 +506,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/myScrapy$workingHours.coverage" NAME="workingHours Coverage Results" MODIFIED="1680355500552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workDaily/workDaily/spiders" />
-    <SUITE FILE_PATH="coverage/myScrapy$ocr.coverage" NAME="ocr Coverage Results" MODIFIED="1680357167045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workDaily/workDaily/spiders/utils" />
+    <SUITE FILE_PATH="coverage/myScrapy$ocr.coverage" NAME="ocr Coverage Results" MODIFIED="1680358093236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workDaily/workDaily/spiders/utils" />
     <SUITE FILE_PATH="coverage/myScrapy$configparser.coverage" NAME="configparser Coverage Results" MODIFIED="1627387245095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibohot/weibohot/utils" />
     <SUITE FILE_PATH="coverage/myScrapy$weibohosprider01.coverage" NAME="weibohosprider01 Coverage Results" MODIFIED="1627369316140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weibohot/weibohot/spiders" />
     <SUITE FILE_PATH="coverage/myScrapy$middlewares.coverage" NAME="middlewares Coverage Results" MODIFIED="1626406648143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tutorial/tutorial" />

@@ -13,6 +13,5 @@ class WorkdailyItem(scrapy.Item):
     image_name = scrapy.Field()
 
 
-# class CaptchaCodeItem(ImagesPipeline):
-#     image_url = scrapy.Field()
-#     image_name = scrapy.Field()
+class CaptchaCodeItem(scrapy.Item):
+    code_value = scrapy.Field()

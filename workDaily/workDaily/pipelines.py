@@ -2,22 +2,76 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+import json
 import os.path
 import re
 
+import ddddocr
 import scrapy
+from scrapy import Request
 from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.utils.project import get_project_settings
+
+from workDaily.items import CaptchaCodeItem
 
 
 # useful for handling different item types with a single interface
 
 class WorkdailyPipeline:
     def process_item(self, item, spider):
-        # print("WorkdailyPipeline");
-        # print(item)
-        # return item
+        print("into WorkdailyPipeline")
+        print(item)
+        spider.engine.crawl(
+            Request(
+                method='post',
+                body=json.dump(item),
+                url=spider.login_url,
+                callback=self.custom_callback,
+            ),
+            spider,
+        )
+
+    def custom_callback(self):
+        print('into custom_callback')
+        pass
+
+
+class LoginPipeline:
+    def open_spider(self, spider):
+        print("called loginPipline open_spider method when start spider")
+
+    def process_item(self, item, spider):
+        print("into LoginPipline")
+        print(item)
+        # yield scrapy.Request(
+        #     spider.login_url,
+        #     dont_filter=True,
+        #     headers=spider.headers,
+        #     callback=spider.loginWithCount
+        # )
+
+    def close_spider(self, spider):
+        print("called loginPipline close_spider  when close spider")
+
+
+class OcrPipline:
+    def process_item(self, item, spider):
+        print("into OcrPipline")
+        print(item)
+        ocr = ddddocr.DdddOcr()
+        captchaCodeItem = CaptchaCodeItem()
+        try:
+            with open(
+                    'D:\\data\\code\\back\\python\\scrapy\\myScrapy\\workDaily\\workDaily\\spiders\\images\\catpath.png',
+                    'rb') as f:
+                image = f.read()
+                # print(ocr.classification(image))
+                captchaCodeItem['code_value'] = ocr.classification(image)
+                print(captchaCodeItem)
+            return captchaCodeItem
+        except IOError:
+            print("验证码文件未找到！！")
         pass
 
 

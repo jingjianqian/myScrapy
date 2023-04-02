@@ -49,14 +49,15 @@ class WorkinghoursSpider(scrapy.Spider):
         item['image_url'] = self.captcha_code_url[0]
         item['image_name'] = "Captcha_codeItem.png"
         yield item
+        # self.loginWithCount(response)
 
     def login(self, response):
         yield scrapy.Request(
             self.start_urls[0],
             cookies=self.cookies,
-            callback=self.parse_login
+            callback=self.loginWithCount
         )
 
     def loginWithCount(self, response):
-
+        print("into loginWithCount")
         pass

@@ -69,8 +69,10 @@ SPIDER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # "workDaily.pipelines.WorkdailyPipeline": 300,
-    "workDaily.pipelines.ImagePipeline": 299
+    "workDaily.pipelines.ImagePipeline": 299,
+    "workDaily.pipelines.OcrPipline": 300,
+    "workDaily.pipelines.LoginPipeline": 301,
+    # "workDaily.pipelines.WorkdailyPipeline": 302
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
