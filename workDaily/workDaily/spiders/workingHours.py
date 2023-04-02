@@ -1,8 +1,11 @@
 import re
+import time
 
+import ddddocr
 import scrapy
 
 from workDaily.items import WorkdailyItem
+from workDaily.spiders.utils.ocr import MyOcr
 
 
 class WorkinghoursSpider(scrapy.Spider):
@@ -18,6 +21,9 @@ class WorkinghoursSpider(scrapy.Spider):
         "cas-login": "\"CASTGC=TGT-34738-Bg3NGqnXmEafZEvoWvC4A7x5gTAMCtgc2Plg4vdtPapbBhbQlw\"",
         "jingjq": "%2Fdefault%2Fame%2Flogin%2Fimage%2Fyuanbao1.jpg"
     }
+
+    def start_requests(self):
+        pass
 
     def parse(self, response, *args, **kwargs):
         main_page_list = re.findall(r'href = "(.*?)"', response.text)
@@ -50,6 +56,16 @@ class WorkinghoursSpider(scrapy.Spider):
         item['image_name'] = "Captcha_codeItem.png"
         yield item
         # self.loginWithCount(response)
+
+        # time.sleep(10)
+        myOcr = MyOcr('./images/catpath.png')
+        print("1231312312312312312312jkkdhfkjsdhfdsf")
+        result = myOcr.OcrOneImage()
+        print(result)
+        # ocr = ddddocr.DdddOcr()
+        # with open('./images/catpath.png') as f:
+        #     image = f.read()
+        # result = ocr.classification(image)
 
     def login(self, response):
         yield scrapy.Request(
