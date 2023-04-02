@@ -32,6 +32,7 @@ class WorkdailyPipeline:
             spider,
         )
 
+
     def custom_callback(self):
         print('into custom_callback')
         pass

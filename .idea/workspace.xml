@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6ab918-a198-43a5-91ae-23bef6482478" name="Default" comment="完成微博热搜基本的抓取">
-      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/pipelines/loginPipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/work.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workDaily/workDaily/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" beforeDir="false" afterPath="$PROJECT_DIR$/workDaily/workDaily/spiders/workingHours.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +330,7 @@
       <workItem from="1677927135835" duration="4135000" />
       <workItem from="1678713705723" duration="13000" />
       <workItem from="1680353898134" duration="5902000" />
-      <workItem from="1680409057448" duration="6073000" />
+      <workItem from="1680409057448" duration="15142000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化">
       <created>1526208122611</created>
