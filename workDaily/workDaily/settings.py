@@ -36,7 +36,8 @@ allow_redirects = True
 IMAGES_STORE = ".\\images"  # os.path.join(os.path.dirname(os.path.dirname(__file__)), 'images')
 
 # Disable cookies (enabled by default)
-# COOKIES_ENABLED = False
+COOKIES_ENABLED = True
+COOKIES_DEBUG = True  # 显示发送和接受的cookie
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
